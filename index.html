@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>my-projectcd</title>
+
+  <style>
+    /* Avatar */
+    df-messenger .df-avatar-icon img,
+    df-messenger .df-chat-icon-user img {
+      border-radius: 50% !important;
+      width: 45px !important;
+      height: 45px !important;
+      object-fit: cover !important;
+    }
+
+    /* Chat bubble */
+    df-messenger::part(message) {
+      border-radius: 18px !important;
+    }
+
+    /* Theme colors */
+    df-messenger {
+      --df-messenger-bot-message: #e9f5ff;
+      --df-messenger-user-message: #dfffe6;
+      --df-messenger-font-color: #1A1A1A;
+      --df-messenger-button-titlebar-color: #3FA2F6;
+      --df-messenger-button-color: #3FA2F6;
+    }
+
+    /* Floating position */
+    df-messenger {
+      right: 20px !important;
+      bottom: 20px !important;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger chat-icon="picture/logo.png" intent="WELCOME" chat-title="DIDI"
+     agent-id="f13a17cc-91cc-46cf-a655-39e4abed1a73" language-code="th">
+  </df-messenger>
+
+  </script>
+</body>
+
+</html>
