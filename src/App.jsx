@@ -15,7 +15,7 @@ import ResumePkanda from './pages/ResumeP.kanda';
 import ResumeAoak from './pages/ResumeA.oak';
 const App = () => {
   return (
-    <Router>
+    <Router basename="/ETwebtest">
       <ScrollToTop />
       <Routes>
         <Route path='/' element={<Home />} />
