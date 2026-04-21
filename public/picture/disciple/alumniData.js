@@ -4,7 +4,7 @@ export const alumniData = [
     position: 'Quality Assurance Engineer',
     company: 'Doppio Tech Co.,Ltd.',
     faculty: 'ศิษย์เก่า คณะวิศวกรรมศาสตร์และเทคโนโลยี สาขาเทคโนโลยีดิจิทัลและสารสนเทศ',
-    image: '/picture/disciple/กำพล.jpg',
+    image: 'กำพล.jpg',
     highlight: true,
   },
   {
