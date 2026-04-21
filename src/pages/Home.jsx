@@ -65,7 +65,7 @@ const Home = () => {
     const personnelData = [
         {
             href: "/อาจารย์ศราวิน",
-            src: "/picture/Teacher/อ.ศราวิน.png",
+            src: "picture/Teacher/อ.ศราวิน.png",
             alt: "อาจารย์ศราวิน"
         },
         {
@@ -75,7 +75,7 @@ const Home = () => {
         },
         {
             href: "/อาจารย์ชนกานต์",
-            src: "/picture/Teacher/อ.โอ๊ค.png",
+            src: "picture/Teacher/อ.โอ๊ค.png",
             alt: "อาจารย์ชนกานต์"
         },
         {
@@ -117,7 +117,7 @@ const Home = () => {
                 <div className="home-content relative z-10 flex flex-col justify-center items-center h-full gap-4 md:gap-6">
                     <div className="home-name flex flex-col items-center gap-3 md:gap-4">
                         <img
-                            src="/picture/DITLOGO.png"
+                            src="picture/DITLOGO.png"
                             alt="DIT Logo"
                             className="w-48 md:w-72 h-auto"
                         />
@@ -203,7 +203,7 @@ const Home = () => {
                     playsInline
                     className="absolute top-0 left-0 w-full h-full object-cover z-0"
                 >
-                    <source src="/video/BG1.mp4" type="video/mp4" />
+                    <source src="video/BG1.mp4" type="video/mp4" />
                 </video>
 
                 <div className="absolute top-0 left-0 w-full h-full bg-black/60 z-5"></div>
@@ -229,7 +229,7 @@ const Home = () => {
                             }}
                             transition={{ type: "spring", stiffness: 300, damping: 20 }}
                         >
-                            <img src="/picture/IT_DigitalContent.png" alt="Digital Content" className="w-full h-auto" />
+                            <img src="picture/IT_DigitalContent.png" alt="Digital Content" className="w-full h-auto" />
                             <div className="p-6 text-center">
                                 <h3 className="text-xl font-semibold text-gray-100 leading-snug mb-2">
                                     ด้านสื่อและกราฟิกดิจิทัล <br /> (Digital Content)
@@ -253,7 +253,7 @@ const Home = () => {
                             }}
                             transition={{ type: "spring", stiffness: 300, damping: 20 }}
                         >
-                            <img src="/picture/IT_DataScience.png" alt="Data Science" className="w-full h-auto" />
+                            <img src="picture/IT_DataScience.png" alt="Data Science" className="w-full h-auto" />
                             <div className="p-6 text-center">
                                 <h3 className="text-xl font-semibold text-gray-100 leading-snug mb-2">
                                     ด้านวิทยาการข้อมูล <br /> (Data Science)
@@ -277,7 +277,7 @@ const Home = () => {
                             }}
                             transition={{ type: "spring", stiffness: 300, damping: 20 }}
                         >
-                            <img src="/picture/IT_DigitalStructure.png" alt="Digital Structure" className="w-full h-auto" />
+                            <img src="picture/IT_DigitalStructure.png" alt="Digital Structure" className="w-full h-auto" />
                             <div className="p-6 text-center">
                                 <h3 className="text-xl font-semibold text-gray-100 leading-snug mb-2">
                                     ด้านโครงสร้างดิจิทัล <br /> (Digital Structure)
@@ -316,7 +316,7 @@ const Home = () => {
                                 whileHover={{ y: -5, scale: 1.02, boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.1)", zIndex: 10 }}
                                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
                             >
-                                <img src="/picture/ATarttoy.png" alt="คอร์สปั้นโมเดล 3D Blender" className="w-full h-auto object-cover" />
+                                <img src="picture/ATarttoy.png" alt="คอร์สปั้นโมเดล 3D Blender" className="w-full h-auto object-cover" />
                                 <div className="p-4 bg-gray-50">
                                     <p className="text-sm font-semibold text-gray-500">3rd มีนาคม 2025</p>
                                     <p className="text-base text-gray-800">คอร์สปั้นโมเดล **3D Blender** ร่องอบรมวันที่ 1-2 มีนาคม 2568</p>
@@ -361,7 +361,7 @@ const Home = () => {
                                 whileHover={{ y: -5, scale: 1.02, boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.1)", zIndex: 10 }}
                                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
                             >
-                                <img src="/picture/ATicp.jpg" alt="PIM กับเทคโนโลยี Blockchain" className="w-full h-auto object-cover" />
+                                <img src="picture/ATicp.jpg" alt="PIM กับเทคโนโลยี Blockchain" className="w-full h-auto object-cover" />
                                 <div className="p-4 bg-gray-50">
                                     <p className="text-sm font-semibold text-gray-500">10th ตุลาคม 2024</p>
                                     <p className="text-base text-gray-800">PIM อินเทรนด์ไปกับเทคโนโลยี **Blockchain**</p>
@@ -448,7 +448,7 @@ const Home = () => {
                                     controls
                                     className="w-full h-full object-cover"
                                 >
-                                    <source src="/video/3อาชีพรายได้สูง.mp4" type="video/mp4" />
+                                    <source src="video/3อาชีพรายได้สูง.mp4" type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
@@ -582,7 +582,7 @@ const Home = () => {
                     playsInline
                     className="absolute top-0 left-0 w-full h-full object-cover  z-0"
                 >
-                    <source src="/video/BG2.mp4" type="video/mp4" />
+                    <source src="video/BG2.mp4" type="video/mp4" />
                 </video>
                 <div className="container relative z-10 mx-auto px-4">
                     <motion.div

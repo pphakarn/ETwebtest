@@ -56,8 +56,8 @@ const Navbar = () => {
 
           {/* Logo */}
           <div className="flex items-center gap-2 md:gap-4">
-            <img src="/picture/PIM1.png" className="w-10 md:w-12" alt="PIM Logo" />
-            <img src="/picture/ETLOGO.png" className="w-32 md:w-40" alt="DIT Logo" />
+            <img src="picture/PIM1.png" className="w-10 md:w-12" alt="PIM Logo" />
+            <img src="picture/ETLOGO.png" className="w-32 md:w-40" alt="DIT Logo" />
           </div>
 
           {/* Desktop Menu */}
