@@ -2,11 +2,11 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home'
-import Course from './pages/course';
+import Course from './pages/Course';
 import Resume from './pages/ResumeA.pat'
 import Activity from './pages/Activity';
 import ScrollToTop from './componentes/ScrollToTop';
-import ResumeAgolf from './pages/Resumea.golf';
+import ResumeAgolf from './pages/ResumeA.golf';
 import ResumeAbas from './pages/ResumeA.bas';
 import ResumeAlek from './pages/ResumeA.lek';
 import ResumeAsarawin from './pages/ResumeA.sarawin';
