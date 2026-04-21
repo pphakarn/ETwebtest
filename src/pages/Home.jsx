@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import Navbar from '../componentes/Navbar/Navbar'
-import "../css/home.css";
+import "../css/Home.css";
 import { motion } from 'framer-motion';
 import { IoReceiptOutline } from "react-icons/io5";
 import { FaSearch } from "react-icons/fa";
@@ -233,6 +233,7 @@ const Home = () => {
                             transition={{ type: "spring", stiffness: 300, damping: 20 }}
                         >
                             <img src="picture/IT_DigitalContent.png" alt="Digital Content" loading="lazy" decoding="async" className="w-full h-auto" />
+
                             <div className="p-6 text-center">
                                 <h3 className="text-xl font-semibold text-gray-100 leading-snug mb-2">
                                     ด้านสื่อและกราฟิกดิจิทัล <br /> (Digital Content)
@@ -257,6 +258,7 @@ const Home = () => {
                             transition={{ type: "spring", stiffness: 300, damping: 20 }}
                         >
                             <img src="picture/IT_DataScience.png" alt="Data Science" loading="lazy" decoding="async" className="w-full h-auto" />
+
                             <div className="p-6 text-center">
                                 <h3 className="text-xl font-semibold text-gray-100 leading-snug mb-2">
                                     ด้านวิทยาการข้อมูล <br /> (Data Science)

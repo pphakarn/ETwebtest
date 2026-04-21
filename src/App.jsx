@@ -2,20 +2,20 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home'
-import Course from './pages/course';
-import Resume from './pages/ResumeA.pat'
+import Course from './pages/Course';
+import Resume from './pages/ResumeA.pat.jsx'
 import Activity from './pages/Activity';
 import ScrollToTop from './componentes/ScrollToTop';
-import ResumeAgolf from './pages/Resumea.golf';
-import ResumeAbas from './pages/ResumeA.bas';
-import ResumeAlek from './pages/ResumeA.lek';
-import ResumeAsarawin from './pages/ResumeA.sarawin';
+import ResumeAgolf from './pages/ResumeA.golf.jsx';
+import ResumeAbas from './pages/ResumeA.bas.jsx';
+import ResumeAlek from './pages/ResumeA.lek.jsx';
+import ResumeAsarawin from './pages/ResumeA.sarawin.jsx';
 import AlumniPage from './pages/Alumni';
-import ResumePkanda from './pages/ResumeP.kanda';
-import ResumeAoak from './pages/ResumeA.oak';
+import ResumePkanda from './pages/ResumeP.kanda.jsx';
+import ResumeAoak from './pages/ResumeA.oak.jsx';
 const App = () => {
   return (
-    <Router>
+    <Router basename="/ETwebtest">
       <ScrollToTop />
       <Routes>
         <Route path='/' element={<Home />} />
