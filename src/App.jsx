@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home'
 import Course from './pages/Course';
@@ -15,7 +15,7 @@ import ResumePkanda from './pages/ResumeP.kanda.jsx';
 import ResumeAoak from './pages/ResumeA.oak.jsx';
 const App = () => {
   return (
-    <Router basename="/ETwebtest">
+    <>
       <ScrollToTop />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -31,7 +31,7 @@ const App = () => {
         <Route path='/พี่กานดา' element={<ResumePkanda/>} />
         <Route path='/อาจารย์ชนกานต์' element={<ResumeAoak/>} />
       </Routes>
-    </Router>
+    </>
   );
 }
 
