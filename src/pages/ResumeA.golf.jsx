@@ -26,7 +26,7 @@ const ResumeAgolf = () => {
                             {/* Profile Image */}
                             <div className="w-48 h-48 rounded-full border-8 border-[#5D6D7E] overflow-hidden shadow-lg mb-8 shrink-0">
                                 <img
-                                    src="/picture/Teacher/อ.กอล์ฟ1.png"
+                                    src="/picture/Teacher/a'goft1.png"
                                     alt="Profile"
                                     className="w-full h-full object-cover"
                                 />

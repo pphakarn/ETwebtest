@@ -65,7 +65,7 @@ const Home = () => {
     const personnelData = [
         {
             href: "/อาจารย์ศราวิน",
-            src: "/picture/Teacher/อ.ศราวิน.png",
+            src: "/picture/Teacher/a'sarawin.png",
             alt: "อาจารย์ศราวิน"
         },
         {
@@ -75,11 +75,11 @@ const Home = () => {
         },
         {
             href: "/อาจารย์ชนกานต์",
-            src: "/picture/Teacher/อ.โอ๊ค.png",
+            src: "/picture/Teacher/a'oak.png",
             alt: "อาจารย์ชนกานต์"
         },
         {
-            href: "/อาจารย์วรรณวิภา", // ลิงก์ภายใน
+            href: "/อาจารย์วรรณวิภา", 
             src: "https://et.pim.ac.th/wp/wp-content/uploads/2025/02/ดีไซน์ที่ยังไม่ได้ตั้งชื่อ.zip-pat-5.png",
             alt: "อาจารย์วรรณวิภา"
         },
@@ -91,7 +91,7 @@ const Home = () => {
         {
             href: "/อาจารย์วุฒิกานต์",
             src: "https://et.pim.ac.th/wp/wp-content/uploads/2025/02/ดีไซน์ที่ยังไม่ได้ตั้งชื่อ.zip-6-1.png",
-            alt: "อาจารย์วุฒิการณ์"
+            alt: "อาจารย์วุฒิกานต์"
         },
         {
             href: "/พี่กานดา",
