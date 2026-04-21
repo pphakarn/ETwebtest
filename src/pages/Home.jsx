@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import Navbar from '../componentes/Navbar/Navbar'
-import "../css/home.css";
+import "../css/Home.css";
 import { motion } from 'framer-motion';
 import { IoReceiptOutline } from "react-icons/io5";
 import { FaSearch } from "react-icons/fa";
