@@ -79,7 +79,7 @@ const Home = () => {
             alt: "อาจารย์ชนกานต์"
         },
         {
-            href: "/อาจารย์วรรณวิภา", 
+            href: "/อาจารย์วรรณวิภา",
             src: "https://et.pim.ac.th/wp/wp-content/uploads/2025/02/ดีไซน์ที่ยังไม่ได้ตั้งชื่อ.zip-pat-5.png",
             alt: "อาจารย์วรรณวิภา"
         },
@@ -150,15 +150,15 @@ const Home = () => {
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 mt-10 pt-6 border-t border-zinc-700">
-                                <button className="flex items-center justify-center gap-3 px-6 py-3 bg-zinc-700 text-white font-semibold rounded-full hover:bg-zinc-500 transition-colors duration-200 text-lg">
-                                    <IoReceiptOutline className="text-xl" />
-                                    ค่าเทอม
-                                </button>
-
-                                <button className="flex items-center justify-center gap-3 px-6 py-3 bg-[#3FA2F6] text-white font-semibold rounded-full hover:bg-[#2155CD] transition-colors duration-200 text-lg">
+                                <a
+                                    href="https://intranet.pim.ac.th/internalservices/student_register.php/th/home/signin"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center justify-center gap-3 px-6 py-3 bg-[#3FA2F6] text-white font-semibold rounded-full hover:bg-[#2155CD] transition-colors duration-200 text-lg"
+                                >
                                     <FaSearch className="text-base" />
                                     สมัครเรียน
-                                </button>
+                                </a>
                             </div>
                         </motion.div>
 
