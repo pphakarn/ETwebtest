@@ -4,7 +4,7 @@ export const alumniData = [
     position: 'Quality Assurance Engineer',
     company: 'Doppio Tech Co.,Ltd.',
     faculty: 'ศิษย์เก่า คณะวิศวกรรมศาสตร์และเทคโนโลยี สาขาเทคโนโลยีดิจิทัลและสารสนเทศ',
-    image: '/picture/disciple/student-1.jpg',
+    image: import.meta.env.BASE_URL + 'picture/disciple/student1.jpg',
     highlight: true,
   },
   {
@@ -12,34 +12,34 @@ export const alumniData = [
     position: 'Data Engineer',
     company: 'Yip In Tsoi & Co.,Ltd.',
     faculty: 'ศิษย์เก่า คณะวิศวกรรมศาสตร์และเทคโนโลยี สาขาเทคโนโลยีดิจิทัลและสารสนเทศ',
-    image: '/picture/disciple/student-2.jpg',
+    image: import.meta.env.BASE_URL + 'picture/disciple/student2.jpg',
   },
   {
     name: 'ณิชรัตน์ ภัคภรชีวีวัฒน์',
     position: 'IT Support Engineer',
     company: 'SCB DataX Co.,Ltd.',
     faculty: 'ศิษย์เก่า คณะวิศวกรรมศาสตร์และเทคโนโลยี สาขาเทคโนโลยีดิจิทัลและสารสนเทศ',
-    image: '/picture/disciple/student-3.jpg',
+    image: import.meta.env.BASE_URL + 'picture/disciple/student3.jpg',
   },
   {
     name: 'ธีระวัฒน์ นาหิรัญ',
     position: 'Techician-Consumer Service',
     company: 'บริษัทไวร์เออ แอนด์ ไวร์เลส จำกัด',
     faculty: 'ศิษย์เก่า คณะวิศวกรรมศาสตร์และเทคโนโลยี สาขาเทคโนโลยีดิจิทัลและสารสนเทศ',
-    image: '/picture/disciple/student-4.jpg',
+    image: import.meta.env.BASE_URL + 'picture/disciple/student4.jpg',
   },
   {
     name: 'พรรณราย อินทร์ใจเอื้อ',
     position: 'Product Design',
     company: 'Ascend Money',
     faculty: 'ศิษย์เก่า คณะวิศวกรรมศาสตร์และเทคโนโลยี สาขาเทคโนโลยีดิจิทัลและสารสนเทศ',
-    image: '/picture/disciple/student-5.jpg',
+    image: import.meta.env.BASE_URL + 'picture/disciple/student5.jpg',
   },
   {
     name: 'วทัญญู สมภิพงษ์',
     position: 'Quality Assurance Engineer',
     company: 'บริษัทเงินเทอร์โบ จำกัด(มหาชน)',
     faculty: 'ศิษย์เก่า คณะวิศวกรรมศาสตร์และเทคโนโลยี สาขาเทคโนโลยีดิจิทัลและสารสนเทศ',
-    image: '/picture/disciple/student-6.jpg',
+    image: import.meta.env.BASE_URL + 'picture/disciple/student6.jpg',
   }
-]
+];

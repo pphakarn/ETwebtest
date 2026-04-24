@@ -74,14 +74,14 @@ const Home = () => {
             alt: "อาจารย์พรศักดิ์"
         },
         {
+            href: "/อาจารย์วรรณวิภา",
+            src: "https://et.pim.ac.th/wp/wp-content/uploads/2025/02/ดีไซน์ที่ยังไม่ได้ตั้งชื่อ.zip-pat-5.png",
+            alt: "อาจารย์วรรณวิภา"
+        },
+        {
             href: "/อาจารย์ชนกานต์",
             src: "picture/Teacher/aoak.png",
             alt: "อาจารย์ชนกานต์"
-        },
-        {
-            href: "/อาจารย์วรรณวิภา", 
-            src: "https://et.pim.ac.th/wp/wp-content/uploads/2025/02/ดีไซน์ที่ยังไม่ได้ตั้งชื่อ.zip-pat-5.png",
-            alt: "อาจารย์วรรณวิภา"
         },
         {
             href: "/อาจารย์ดนัยเลิศ",
@@ -150,15 +150,15 @@ const Home = () => {
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 mt-10 pt-6 border-t border-zinc-700">
-                                <button className="flex items-center justify-center gap-3 px-6 py-3 bg-zinc-700 text-white font-semibold rounded-full hover:bg-zinc-500 transition-colors duration-200 text-lg">
-                                    <IoReceiptOutline className="text-xl" />
-                                    ค่าเทอม
-                                </button>
-
-                                <button className="flex items-center justify-center gap-3 px-6 py-3 bg-[#3FA2F6] text-white font-semibold rounded-full hover:bg-[#2155CD] transition-colors duration-200 text-lg">
+                                <a
+                                    href="https://intranet.pim.ac.th/internalservices/student_register.php/th/home/signin"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center justify-center gap-3 px-6 py-3 bg-[#3FA2F6] text-white font-semibold rounded-full hover:bg-[#2155CD] transition-colors duration-200 text-lg"
+                                >
                                     <FaSearch className="text-base" />
                                     สมัครเรียน
-                                </button>
+                                </a>
                             </div>
                         </motion.div>
 
@@ -233,6 +233,7 @@ const Home = () => {
                             transition={{ type: "spring", stiffness: 300, damping: 20 }}
                         >
                             <img src="picture/IT_DigitalContent.png" alt="Digital Content" loading="lazy" decoding="async" className="w-full h-auto" />
+
                             <div className="p-6 text-center">
                                 <h3 className="text-xl font-semibold text-gray-100 leading-snug mb-2">
                                     ด้านสื่อและกราฟิกดิจิทัล <br /> (Digital Content)
@@ -257,6 +258,7 @@ const Home = () => {
                             transition={{ type: "spring", stiffness: 300, damping: 20 }}
                         >
                             <img src="picture/IT_DataScience.png" alt="Data Science" loading="lazy" decoding="async" className="w-full h-auto" />
+
                             <div className="p-6 text-center">
                                 <h3 className="text-xl font-semibold text-gray-100 leading-snug mb-2">
                                     ด้านวิทยาการข้อมูล <br /> (Data Science)
