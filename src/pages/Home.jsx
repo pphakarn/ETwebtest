@@ -74,16 +74,17 @@ const Home = () => {
             alt: "อาจารย์พรศักดิ์"
         },
         {
-            href: "/อาจารย์ชนกานต์",
-            src: "picture/Teacher/aoak.png",
-            alt: "อาจารย์ชนกานต์"
-        },
-        {
             href: "/อาจารย์วรรณวิภา",
             src: "https://et.pim.ac.th/wp/wp-content/uploads/2025/02/ดีไซน์ที่ยังไม่ได้ตั้งชื่อ.zip-pat-5.png",
             alt: "อาจารย์วรรณวิภา"
         },
         {
+            href: "/อาจารย์ชนกานต์",
+            src: "picture/Teacher/aoak.png",
+            alt: "อาจารย์ชนกานต์"
+        },
+        {
+
             href: "/อาจารย์ดนัยเลิศ",
             src: "https://et.pim.ac.th/wp/wp-content/uploads/2025/02/ดีไซน์ที่ยังไม่ได้ตั้งชื่อ.zip-lek-2.png",
             alt: "อาจารย์ดนัยเลิศ"

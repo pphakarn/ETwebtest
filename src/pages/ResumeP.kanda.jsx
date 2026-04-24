@@ -37,7 +37,7 @@ const ResumePkanda = () => {
                                     นางสาวกานดา เสือน้อย
                                 </h1>
                                 <p className="text-md md:text-lg text-gray-300 font-light">
-                                    เจ้าหน้าาที่อาวุโสและงานกิจการนักศึกษา
+                                    ผู้บริหารกลุ่มงาน
                                 </p>
                             </div>
 
@@ -86,7 +86,7 @@ const ResumePkanda = () => {
                                     นางสาวกานดา เสือน้อย
                                 </h1>
                                 <p className="text-md md:text-lg text-gray-300 font-light">
-                                    เจ้าหน้าาที่อาวุโสและงานกิจการนักศึกษา
+                                    ผู้บริหารกลุ่มงาน
                                 </p>
                             </div>
 
@@ -96,69 +96,68 @@ const ResumePkanda = () => {
                                         <h3 className="text-xl font-bold border-b-2 border-[#B0C4DE] pb-2 mb-4">
                                             ประสบการณ์ทำงาน
                                         </h3>
-                                        {/* <div className="mb-2">
-                                            <p className="font-bold text-base text-[#2E4057]">พ.ศ. 2563 - ปัจจุบัน</p>
+                                        <div className="mb-2">
+                                            <p className="font-bold text-base text-[#2E4057]">PANYAPIWAT INSTITUTE OF MANAGEMENT</p>
                                             <p className="text-sm mt-1 text-gray-700 pl-4 border-l-2 border-[#B0C4DE]">
-                                                อาจารย์ประจำสาขาวิชาเทคโนโลยีดิจิทัลและสารสนเทศ คณะวิศวกรรมศาสตร์และเทคโนโลยี<br />
-                                                สถาบันการจัดการปัญญาภิวัฒน์
+                                                Manager (Student Affairs Manager and Secretary) - present <br />
+                                                Senior officer (Faculty of Engineering and Technology) - 2022
                                             </p>
-                                            <p className="font-bold text-base text-[#2E4057]">พ.ศ. 2550 - 2563</p>
+                                            <p className="font-bold text-base text-[#2E4057]">KRIRK UNIVERSITY</p>
                                             <p className="text-sm mt-1 text-gray-700 pl-4 border-l-2 border-[#B0C4DE]">
-                                                อาจารย์ประจำหลักสูตร สาขาวิชาการออกแบบกราฟิกและมัลติมีเดีย คณะสหวิทยาการ<br />
-                                                มหาวิทยาลัยคริสเตียน
+                                                Head of the Career Guidance and Employment Center - 2021
                                             </p>
-                                            <p className="font-bold text-base text-[#2E4057]">พ.ศ. 2558 - 2563</p>
+                                            <p className="font-bold text-base text-[#2E4057]">PANYAPIWAT INSTITUTE OF MANAGEMENT</p>
                                             <p className="text-sm mt-1 text-gray-700 pl-4 border-l-2 border-[#B0C4DE]">
-                                                กรรมการผู้จัดการ <br />
-                                                บริษัท ดราโกโมะ จำกัด
+                                                Senior officer (Business Incubation Center) - 2020
                                             </p>
-                                        </div> */}
+                                            <p className="font-bold text-base text-[#2E4057]">DHURAKIJ PUNDIT UNIVERSITY</p>
+                                            <p className="text-sm mt-1 text-gray-700 pl-4 border-l-2 border-[#B0C4DE]">
+                                                officer (Student Affairs) - 2019 <br />
+                                                officer (Careerprep.) - 2017 <br />
+                                                officer (TLC) - 2014
+                                            </p>
+                                        </div>
                                     </section>
 
-                                    {/* Teaching Experience */}
-                                    <section className="mb-0">
-                                        <h3 className="text-xl font-bold border-b-2 border-[#B0C4DE] pb-2 mb-4">
-                                            ประสบการณ์ด้านการสอน/ฝึกอบรม
-                                        </h3>
-                                        {/* <div>
-                                            <p className="font-bold text-base mb-2">ฝึกอบรม</p>
-                                            <ul className="list-disc list-inside text-sm space-y-1 text-gray-700 pl-2">
-                                                <li>ประกาศนียบัตร ด้านการผ่านหลักสูตรอบรมภายใต้โครงการประกวดแผนการตลาดธุรกิจซอฟต์แวร์ดีเด่นแห่งชาติ ธันวาคม 2553</li>
-                                                <li>Certificate of Proficiency in Studio Sound Engineer#16 June 2007 GEN X  ACADEMY </li>
+                                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                                        {/* Teaching Experience */}
+                                        <section>
+                                            <h3 className="text-xl font-bold border-b-2 border-[#B0C4DE] pb-2 mb-4">
+                                                ความเชี่ยวชาญ
+                                            </h3>
+                                            <div>
+                                                <ul className="list-disc list-inside text-sm space-y-1 text-gray-700 pl-2">
+                                                    <li>Capcut</li>
+                                                    <li>CANVA</li>
+                                                    <li>AI Skill</li>
+                                                    <li>MS Office </li>
+                                                    <li>Wordpress</li>
+                                                    <li>Admin Facebook Page / website/ Tiktok/ Youtube</li>
+                                                </ul>
+                                            </div>
+                                        </section>
+
+                                        <section>
+                                            <h3 className="text-xl font-bold border-b-2 border-[#B0C4DE] pb-2 mb-4 text-[#2E4057]">
+                                                รางวัลเกียรติยศ
+                                            </h3>
+                                            <ul className="list-disc list-outside ml-4 text-sm space-y-3 text-gray-700 text-justify leading-relaxed">
+                                                <li>
+                                                    <strong>รางวัลบุคลากรดีเด่นระดับหัวหน้าศูนย์</strong> <br />
+                                                    <p>มหาวิทยาลัยเกริก ,2022</p>
+                                                </li>
+                                                <li>
+                                                    <strong>รางวัลบุคลากรดีเด่นระดับเจ้าหน้าที่</strong> <br />
+                                                    <p>มหาวิทยาลัยธุรกิจบัณฑิตย์ ,2018</p>
+                                                </li>
                                             </ul>
-                                        </div> */}
-                                    </section>
+                                        </section>
+                                    </div>
 
                                 </div>
                             </div>
                         </main>
                     </div>
-                    <section className="w-full py-8 px-8">
-                        <h3 className="text-xl font-bold border-b-2 border-[#B0C4DE] pb-2 mb-4  text-[#2E4057]">
-                            ผลงานทางวิชาการ/งานวิจัย
-                        </h3>
-                        {/* <ul className="list-disc list-outside ml-4 text-sm space-y-3 text-gray-700 text-justify leading-relaxed">
-                            <li>
-                                วรรณวิภา วงศ์วิไลสกุล, กรณิศ ศรีสัมพันธ์ และ
-                                <span className="font-semibold">ดนัยเลิศ ติยะรัตนาชัย</span> (2560).
-                                การออกแบบโมชันอินโฟกราฟิกเพื่อแนะนำบทบาทของฝ่ายทรัพยากรมนุษย์ในองค์กร.
-                                ใน <span className="italic">การประชุมวิชาการระดับชาติ ปัญญาภิวัฒน์ระดับชาติ ครั้งที่ 7 “Smart Agriculture and Food Management for Sustainability”</span>,
-                                2 มิถุนายน 2560, นนทบุรี, สถาบันการจัดการปัญญาภิวัฒน์, หน้า G158-G168.
-                            </li>
-
-                            <li>
-                                วรรณวิภา วงศ์วิไลสกุล และ
-                                <span className="font-semibold">ดนัยเลิศ ติยะรัตนาชัย</span> (2561).
-                                การประยุกต์ใช้แอนิเมชันสำหรับเด็ก.
-                                <span className="italic">วารสารมหาวิทยาลัยคริสเตียน</span>, 24(2), 306-319.
-                            </li>
-
-                            <li>
-                                <span className="font-semibold">ดนัยเลิศ ติยะรัตนาชัย</span>.
-                                สารนิพนธ์: การออกแบบสื่อประชาสัมพันธ์ บริษัท ดิจิดรีม จำกัด (2549)
-                            </li>
-                        </ul> */}
-                    </section>
 
                 </motion.div>
             </div>

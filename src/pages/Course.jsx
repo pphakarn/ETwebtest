@@ -409,19 +409,19 @@ const Course = () => {
                                             <thead>
                                                 <tr>
                                                     <th className="bg-gray-300 text-gray-700 rounded-lg p-2">ชั้นปี</th>
-                                                    <th className="bg-pink-200 rounded-lg p-2">Pre<br />(3 เดือน)</th>
-                                                    <th className="bg-orange-200 rounded-lg p-2">1.1<br />(3 เดือน)</th>
-                                                    <th className="bg-pink-300 rounded-lg p-2">1.2<br />(3 เดือน)</th>
-                                                    <th className="bg-green-200 rounded-lg p-2">2.1<br />(3 เดือน)</th>
-                                                    <th className="bg-orange-300 rounded-lg p-2">2.2<br />(3 เดือน)</th>
+                                                    <th className="bg-gray-200 rounded-lg p-2">Pre<br />(3 เดือน)</th>
+                                                    <th className="bg-red-500 rounded-lg p-2">1.1<br />(3 เดือน)</th>
+                                                    <th className="bg-red-400 rounded-lg p-2">1.2<br />(3 เดือน)</th>
+                                                    <th className="bg-red-500 rounded-lg p-2">2.1<br />(3 เดือน)</th>
+                                                    <th className="bg-red-400 rounded-lg p-2">2.2<br />(3 เดือน)</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 {[
-                                                    ['ปีที่ 1', 'เรียน', 'เรียน', 'เรียน', 'เรียน', 'ฝึกงาน'],
-                                                    ['ปีที่ 2', '', 'เรียน', 'เรียน', 'เรียน', 'ฝึกงาน'],
-                                                    ['ปีที่ 3', '', 'ฝึกงาน', 'เรียน', 'เรียน', 'เรียน'],
-                                                    ['ปีที่ 4', '', 'ฝึกงาน', 'ฝึกงาน', 'ฝึกงาน', ''],
+                                                    ['ปีที่ 1', 'เรียน', 'เรียน', 'เรียน', 'เรียน', 'ฝึกปฏิบัติ'],
+                                                    ['ปีที่ 2', '', 'เรียน', 'เรียน', 'เรียน', 'ฝึกปฏิบัติ'],
+                                                    ['ปีที่ 3', '', 'ฝึกปฏิบัติ', 'เรียน', 'เรียน', 'เรียน'],
+                                                    ['ปีที่ 4', '', 'ฝึกปฏิบัติ', 'ฝึกปฏิบัติ', 'ฝึกปฏิบัติ', ''],
                                                 ].map((row, i) => (
                                                     <tr key={i}>
                                                         {row.map((cell, j) => (
@@ -429,7 +429,7 @@ const Course = () => {
                                                                 key={j}
                                                                 className={`rounded-lg p-2 ${cell === 'เรียน'
                                                                     ? 'bg-yellow-100'
-                                                                    : cell === 'ฝึกงาน'
+                                                                    : cell === 'ฝึกปฏิบัติ'
                                                                         ? 'bg-red-200'
                                                                         : 'bg-white'
                                                                     }`}
