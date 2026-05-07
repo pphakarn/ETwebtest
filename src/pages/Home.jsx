@@ -65,7 +65,7 @@ const Home = () => {
     const personnelData = [
         {
             href: "/อาจารย์ศราวิน",
-            src: "picture/Teacher/asarawin.pn",
+            src: "picture/Teacher/asarawin.png",
             alt: "อาจารย์ศราวิน"
         },
         {
