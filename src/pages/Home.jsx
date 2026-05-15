@@ -578,7 +578,7 @@ const Home = () => {
                     <source src="video/BG2.mp4" type="video/mp4" />
                 </video>
                 {/* แผ่นกรองสีดำเพื่อให้วิดีโอมืดลง */}
-                <div className="absolute inset-0 bg-black/50 z-[1]"></div>
+                <div className="absolute inset-0 bg-black/50 z-1"></div>
                 <div className="container relative z-10 mx-auto px-4">
                     <motion.div
                         className="text-center mb-12"
@@ -619,7 +619,7 @@ const Home = () => {
                                         
                                         {/* ชื่ออาจารย์และรายละเอียดเพิ่มเติม */}
                                         <div className="absolute bottom-0 left-0 right-0 transition-all duration-500 pointer-events-none z-30">
-                                            <div className="bg-gradient-to-t from-[#0a192f] via-[#0a192f]/80 to-transparent p-6 pt-16 text-center">
+                                            <div className="bg-linear-to-t from-[#0a192f] via-[#0a192f]/80 to-transparent p-6 pt-16 text-center">
                                                 {/* ชื่อ (แสดงตลอดเวลา) */}
                                                 <p className="text-white font-bold text-xs sm:text-sm md:text-base drop-shadow-2xl leading-tight transform group-hover:-translate-y-1 transition-transform duration-500">
                                                     {person.alt}
