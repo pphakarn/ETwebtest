@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react'
 import Navbar from '../componentes/Navbar/Navbar'
 import "../css/Home.css";
 import { motion } from 'framer-motion';
-import { FaSearch, FaChevronDown } from "react-icons/fa";
+import { FaUserGraduate, FaChevronDown } from "react-icons/fa";
 import AnimatedHeadline from '../componentes/AnimatedHeadline';
 import Footer from '../componentes/Footer/footer';
 import { Link } from 'react-router-dom';
@@ -89,7 +89,7 @@ const Home = () => {
                 </div>
 
                 {/* Scroll Indicator */}
-                <motion.div 
+                <motion.div
                     className="absolute bottom-8 md:bottom-12 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 cursor-pointer opacity-80 hover:opacity-100 transition-opacity"
                     animate={{ y: [0, 10, 0] }}
                     transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
@@ -101,7 +101,7 @@ const Home = () => {
                             const elementRect = nextSection.getBoundingClientRect().top;
                             const elementPosition = elementRect - bodyRect;
                             const offsetPosition = elementPosition - offset;
-                            
+
                             window.scrollTo({
                                 top: offsetPosition,
                                 behavior: 'smooth'
@@ -144,7 +144,7 @@ const Home = () => {
                                     rel="noopener noreferrer"
                                     className="flex items-center justify-center gap-3 px-6 py-3 bg-[#3FA2F6] text-white font-semibold rounded-full hover:bg-[#2155CD] transition-colors duration-200 text-lg"
                                 >
-                                    <FaSearch className="text-base" />
+                                    <FaUserGraduate className="text-base" />
                                     สมัครเรียน
                                 </a>
                             </div>
@@ -309,10 +309,10 @@ const Home = () => {
                                 whileHover={{ y: -5, scale: 1.02, boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.1)", zIndex: 10 }}
                                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
                             >
-                                <img src="picture/ATarttoy.jpg" alt="คอร์สปั้นโมเดล 3D Blender" loading="lazy" decoding="async" className="w-full h-auto object-cover" />
+                                <img src="picture/ETcamp26.jpg" alt="ET CAMP 2026 Round 2" loading="lazy" decoding="async" className="w-full h-auto object-cover" />
                                 <div className="p-4 bg-gray-50">
-                                    <p className="text-sm font-semibold text-gray-500">3rd มีนาคม 2025</p>
-                                    <p className="text-base text-gray-800">คอร์สปั้นโมเดล **3D Blender** ร่องอบรมวันที่ 1-2 มีนาคม 2568</p>
+                                    <p className="text-sm font-semibold text-gray-500">4-5 เมษายน 2026</p>
+                                    <p className="text-base text-gray-800">ค่ายกล คนวิศวะ “ET CAMP 2026 Round 2” ภารกิจสุดมันส์ในโลกวิศวกรรมที่รวมพลังของน้อง ๆ ม.ปลายสุดเจ๋งไว้ในที่เดียว!</p>
                                 </div>
                             </motion.div>
 
@@ -323,10 +323,10 @@ const Home = () => {
                                 whileHover={{ y: -5, scale: 1.02, boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.1)", zIndex: 10 }}
                                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
                             >
-                                <img src="picture/ATDIT-ichiton.jpg" alt="ทัศนศึกษา Ichitan" loading="lazy" decoding="async" className="w-full h-auto object-cover" />
+                                <img src="picture/workshop3D25.jpg" alt="Workshop 3D Blender" loading="lazy" decoding="async" className="w-full h-auto object-cover" />
                                 <div className="p-4 bg-gray-50">
-                                    <p className="text-sm font-semibold text-gray-500">9th ธันวาคม 2024</p>
-                                    <p className="text-base text-gray-800">"DekDIT@PIM" PIM เดินทัวร์ **Ichitan** ดินแดนแห่งความสมดุล</p>
+                                    <p className="text-sm font-semibold text-gray-500">21-22 มีนาคม 2026</p>
+                                    <p className="text-base text-gray-800">"Workshop 3D Blender : ART TOYS with AI" บรรยากาศการอบรมสุดเข้มข้นตลอด 2 วันเต็ม เพื่อสร้างสรรค์ Art Toy ของตัวเองตั้งแต่ไอเดียจนถึงโมเดล 3D จริง</p>
                                 </div>
                             </motion.div>
                         </div>
@@ -340,10 +340,10 @@ const Home = () => {
                                 whileHover={{ y: -5, scale: 1.02, boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.1)", zIndex: 10 }}
                                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
                             >
-                                <img src="picture/ATinternTaiwan.jpg" alt="โครงการฝึกงานต่างประเทศ TAIWAN" className="w-full h-auto object-cover" />
+                                <img src="picture/WorkshopShirt25.jpg" alt="พิธีรับเสื้อปฏิบัติการและเกียร์" className="w-full h-auto object-cover" />
                                 <div className="p-4 bg-gray-50">
-                                    <p className="text-sm font-semibold text-gray-500">11th ตุลาคม 2024</p>
-                                    <p className="text-base text-gray-800">โครงการฝึกปฏิบัติงานต่างประเทศ PIM x FGU รุ่นที่ 1 ณ **ไต้หวัน**</p>
+                                    <p className="text-sm font-semibold text-gray-500">28 มกราคม 2026</p>
+                                    <p className="text-base text-gray-800">"พิธีรับเสื้อปฏิบัติการและเกียร์ ประจำปีการศึกษา 2568" เสื้อปฏิบัติการ…สัญลักษณ์แห่งศักดิ์ศรีของความเป็นวิศวกร เพราะเราคือ ET PIM </p>
                                 </div>
                             </motion.div>
 
@@ -354,10 +354,10 @@ const Home = () => {
                                 whileHover={{ y: -5, scale: 1.02, boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.1)", zIndex: 10 }}
                                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
                             >
-                                <img src="picture/ATicp.jpg" alt="PIM กับเทคโนโลยี Blockchain" className="w-full h-auto object-cover" />
+                                <img src="picture/EECbuu25.jpg" alt="DIT ศึกษาดูงาน & เก็บขยะคืนหาดบางแสน" className="w-full h-auto object-cover" />
                                 <div className="p-4 bg-gray-50">
-                                    <p className="text-sm font-semibold text-gray-500">10th ตุลาคม 2024</p>
-                                    <p className="text-base text-gray-800">PIM อินเทรนด์ไปกับเทคโนโลยี **Blockchain**</p>
+                                    <p className="text-sm font-semibold text-gray-500">7 พฤศจิกายน 2025</p>
+                                    <p className="text-base text-gray-800">"DIT ศึกษาดูงาน & เก็บขยะคืนหาดบางแสน" เปิดประสบการณ์เรียนรู้นอกห้องเรียน ณ EEC Automation Park มหาวิทยาลัยบูรพา จังหวัดชลบุรี</p>
                                 </div>
                             </motion.div>
                         </div>
@@ -474,27 +474,27 @@ const Home = () => {
             </section>
 
             {/* === ส่วนใหม่: ข้อมูลหลักสูตร (ปรับแต่งให้สวยงาม) === */}
-            <section className="py-20 md:py-28 bg-gray-100"> {/* ปรับพื้นหลังให้อ่อนลงเล็กน้อยเพื่อความสบายตา */}
-                <div className="container mx-auto px-4">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+            <section className="py-16 md:py-20 bg-gray-100">
+                <div className="container mx-auto px-3">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
 
                         {/* Card 1 (ซ้าย): ข้อมูลหลักสูตร */}
                         <motion.div
-                            className="bg-white p-8 md:p-12 rounded-[30px] shadow-xl hover:shadow-2xl transition-all duration-300 h-full border border-white/50"
+                            className="bg-white p-6 md:p-8 rounded-[24px] shadow-xl hover:shadow-2xl transition-all duration-300 h-full border border-white/50"
                             variants={fadeInFromLeftVariants}
                             initial="hidden"
                             whileInView="show"
                             viewport={{ once: true, amount: 0.3 }}
-                            whileHover={{ y: -5 }} // เพิ่มลูกเล่นขยับขึ้นเล็กน้อยเมื่อโฮเวอร์
+                            whileHover={{ y: -5 }}
                         >
                             {/* หัวข้อ */}
-                            <h2 className="text-xl md:text-2xl font-extrabold mb-6 text-gray-900 tracking-tight">
+                            <h2 className="text-lg md:text-xl font-extrabold mb-5 text-gray-900 tracking-tight">
                                 ข้อมูลหลักสูตร
                             </h2>
-                            <div className="w-full h-[3px] bg-black mb-8 rounded-full opacity-80"></div> {/* เส้นขีดมนและโปร่งแสงนิดหน่อย */}
+                            <div className="w-full h-[2px] bg-black mb-6 rounded-full opacity-80"></div>
 
                             {/* เนื้อหา */}
-                            <ul className="list-disc list-outside pl-6 space-y-5 text-lg leading-relaxed text-gray-700 marker:text-black"> {/* marker:text-black ทำให้จุดเป็นสีดำเข้ม */}
+                            <ul className="list-disc list-outside pl-5 space-y-4 text-base leading-relaxed text-gray-700 marker:text-black">
                                 <li>
                                     <span className="font-bold text-gray-900 block mb-1">ชื่อหลักสูตรภาษาไทย :</span>
                                     หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาเทคโนโลยีดิจิทัลและสารสนเทศ
@@ -505,13 +505,13 @@ const Home = () => {
                                 </li>
                             </ul>
 
-                            <div className="mt-5 mb-6">
-                                <h3 className="text-xl font-bold text-gray-900 inline-block border-b-2 border-black pb-1">
+                            <div className="mt-4 mb-5">
+                                <h3 className="text-lg font-bold text-gray-900 inline-block border-b-2 border-black pb-1">
                                     ชื่อปริญญาและสาขาวิชา
                                 </h3>
                             </div>
 
-                            <ul className="list-disc list-outside pl-6 space-y-3 text-lg leading-relaxed text-gray-700 marker:text-black">
+                            <ul className="list-disc list-outside pl-5 space-y-2 text-base leading-relaxed text-gray-700 marker:text-black">
                                 <li><span className="font-bold text-gray-900">ชื่อเต็ม (ไทย) :</span> วิทยาศาสตรบัณฑิต (เทคโนโลยีดิจิทัลและสารสนเทศ)</li>
                                 <li><span className="font-bold text-gray-900">ชื่อย่อ (ไทย) :</span> วท.บ. (เทคโนโลยีดิจิทัลและสารสนเทศ)</li>
                                 <li><span className="font-bold text-gray-900">ชื่อเต็ม (อังกฤษ):</span> Bachelor of Science (Digital Information Technology)</li>
@@ -521,7 +521,7 @@ const Home = () => {
 
                         {/* Card 2 (ขวา): ระยะเวลาและหน่วยกิต */}
                         <motion.div
-                            className="bg-white p-8 md:p-12 rounded-[30px] shadow-xl hover:shadow-2xl transition-all duration-300 h-full flex flex-col border border-white/50"
+                            className="bg-white p-6 md:p-8 rounded-[24px] shadow-xl hover:shadow-2xl transition-all duration-300 h-full flex flex-col border border-white/50"
                             variants={fadeInFromRightVariants}
                             initial="hidden"
                             whileInView="show"
@@ -529,28 +529,28 @@ const Home = () => {
                             whileHover={{ y: -5 }}
                         >
                             {/* ส่วนที่ 1: ระยะเวลา */}
-                            <div className="mb-12">
-                                <h2 className="text-xl md:text-2xl font-extrabold mb-6 text-gray-900 tracking-tight">
+                            <div className="mb-8">
+                                <h2 className="text-lg md:text-xl font-extrabold mb-5 text-gray-900 tracking-tight">
                                     ระยะเวลาหลักสูตร
                                 </h2>
-                                <div className="w-full h-[3px] bg-black mb-8 rounded-full opacity-80"></div>
-                                <ul className="list-disc list-outside pl-6 text-xl font-bold text-gray-800 marker:text-black">
+                                <div className="w-full h-[2px] bg-black mb-6 rounded-full opacity-80"></div>
+                                <ul className="list-disc list-outside pl-5 text-lg font-bold text-gray-800 marker:text-black">
                                     <li>หลักสูตร 4 ปี (ภาคปกติ)</li>
                                 </ul>
                             </div>
 
                             {/* ส่วนที่ 2: หน่วยกิต */}
                             <div className="grow">
-                                <h2 className="text-xl md:text-2xl font-extrabold mb-6 text-gray-900 tracking-tight">
+                                <h2 className="text-lg md:text-xl font-extrabold mb-5 text-gray-900 tracking-tight">
                                     หน่วยกิตตลอดหลักสูตร 129 หน่วยกิต
                                 </h2>
-                                <div className="w-full h-[3px] bg-black mb-8 rounded-full opacity-80"></div>
+                                <div className="w-full h-[2px] bg-black mb-6 rounded-full opacity-80"></div>
 
-                                <div className="text-lg leading-relaxed text-gray-700">
-                                    <ul className="list-disc list-outside pl-6 space-y-2 marker:text-black">
+                                <div className="text-base leading-relaxed text-gray-700">
+                                    <ul className="list-disc list-outside pl-5 space-y-2 marker:text-black">
                                         <li>หมวดวิชาศึกษาทั่วไป 30 หน่วยกิต</li>
                                         <li>หมวดวิชาเฉพาะ 91 หน่วยกิต ประกอบด้วย</li>
-                                        <ul className="list-[circle] list-outside pl-8 mt-2 space-y-1 text-gray-600">
+                                        <ul className="list-[circle] list-outside pl-7 mt-2 space-y-1 text-gray-600">
                                             <li>วิชาแกน 26 หน่วยกิต</li>
                                             <li>กลุ่มวิชาเฉพาะด้าน 45 หน่วยกิต</li>
                                             <li>กลุ่มวิชาเลือกเฉพาะด้านตามแนวทางการจัดการ 12 หน่วยกิต</li>
@@ -587,9 +587,9 @@ const Home = () => {
                         viewport={{ once: true, amount: 0.5 }}
                         transition={{ duration: 0.5 }}
                     >
-                        <h2 className="text-4xl md:text-5xl font-extrabold text-white leading-tight"
+                        <h2 className="text-xl md:text-2xl font-extrabold text-white leading-tight"
                             style={{
-                                fontSize: '47px',
+                                fontSize: '40px',
                                 color: 'white',
                             }}>
                             อาจารย์ และ บุคลากร
@@ -616,7 +616,7 @@ const Home = () => {
                                             alt={person.alt}
                                             className="w-full h-full object-cover object-top brightness-90 group-hover:brightness-110 group-hover:drop-shadow-[0_0_20px_rgba(63,162,246,0.6)] transition-all duration-500"
                                         />
-                                        
+
                                         {/* ชื่ออาจารย์และรายละเอียดเพิ่มเติม */}
                                         <div className="absolute bottom-0 left-0 right-0 transition-all duration-500 pointer-events-none z-30">
                                             <div className="bg-linear-to-t from-[#0a192f] via-[#0a192f]/80 to-transparent p-6 pt-16 text-center">
@@ -624,7 +624,7 @@ const Home = () => {
                                                 <p className="text-white font-bold text-xs sm:text-sm md:text-base drop-shadow-2xl leading-tight transform group-hover:-translate-y-1 transition-transform duration-500">
                                                     {person.alt}
                                                 </p>
-                                                
+
                                                 {/* ข้อความ ดูรายละเอียดเพิ่มเติม (แสดงเฉพาะตอน Hover) */}
                                                 <div className="mt-2 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500 flex flex-col items-center">
                                                     <span className="text-[#3FA2F6] text-[10px] md:text-xs font-semibold tracking-wide flex items-center gap-1">

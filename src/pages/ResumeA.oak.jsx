@@ -27,7 +27,7 @@ const ResumeAoak = () => {
                             {/* Profile Image */}
                             <div className="w-48 h-48 rounded-full border-8 border-[#5D6D7E] overflow-hidden shadow-lg mb-8 shrink-0">
                                 <img
-                                    src="picture/Teacher/aoak1.jpg"
+                                    src="picture/Teacher/aoak.jpg"
                                     alt="Profile"
                                     className="w-full h-full object-cover"
                                 />

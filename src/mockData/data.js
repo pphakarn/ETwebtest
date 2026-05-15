@@ -15,14 +15,9 @@ export const NavbarMenu = [
         path: "/home",
         scrollTo: "professor"
     },
-    // {
-    //     id: 4,
-    //     title: "วิชาการ",
-    //     link: "#"
-    // },
     {
         id: 5,
-        title: "กิจกรรม",
+        title: "ผลงาน & กิจกรรม",
         link: "/activity"
     },
     {
@@ -30,10 +25,11 @@ export const NavbarMenu = [
         title: "บัณฑิต",
         link: "/alumni"
     },
-    {
+     {
         id: 7,
         title: "สมัครเรียน",
-        link: "#"
+        external: true,
+        link: "https://intranet.pim.ac.th/internalservices/student_register.php/th/home/signin"
     }
 ]
 
@@ -58,8 +54,8 @@ export const personnelData = [
     },
     {
         href: "/อาจารย์ชนกานต์",
-        src: "picture/Teacher/aoakR1.png",
-        thumb: "picture/Teacher/aoak.png",
+        src: "picture/Teacher/aoak1.png",
+        thumb: "picture/Teacher/aoak.jpg",
         alt: "อาจารย์ชนกานต์"
     },
     {

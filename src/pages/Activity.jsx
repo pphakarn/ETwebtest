@@ -12,16 +12,31 @@ const activityData = {
             description: 'แนะนำหลักสูตรเทคโนโลยี ดิจิทัลและสารสนเทศ คณะวิศวกรรมศาสตร์และเทคโนโลยี สถาบันการจัดการปัญญาภิวัฒน์',
             videoId: 'R9z2g1_M2_g'
         },
+        {
+            id: 2,
+            title: 'หลานกง By DIT',
+            description: `ผลงานแอนิเมชัน 3 มิติ ที่ผ่านเข้ารอบโครงการ Software Park – WealthMagik เงินออมสร้างชาติ Awards Season 9
+หัวข้อ: “ครอบครัวสุขใจ ก้าวสู่เกษียณสดใสไปด้วยกัน”
+
+พัฒนาโดย:
+• นางสาววิภาวี ศรีเงิน (ปี 4 DIT)
+• นางสาวพิชยา แผนคง (ปี 4 DIT)
+• เด็กหญิงวรรณวิวาห์ วงศ์วิไลสกุล (ม.3 โรงเรียนสาธิต PIM)
+
+🖥️ อยากเก่ง 3D Animation มาเป็น Team DIT ด้วยกันนะคะ`,
+            videoId: 'JVPPxHrtsGg'
+        }
+
     ],
     seniorTips: [
         {
-            id: 2,
+            id: 3,
             title: 'แนะนำแนวทางจากรุ่นพี่',
             description: 'แนะนำแนวทางการเป็นนักพัฒนา 3D Animation พี่ฟาร์ม DIT รหัส 64 จะมาแนะนำน้องๆ ที่สนใจในการไปทำงานสายงาน Animation',
             videoId: 'vlnxCRK_KrA'
         },
         {
-            id: 3,
+            id: 4,
             title: 'แนะนำแนวทางจากรุ่นพี่',
             description: 'แนะนำแนวทางการเป็นนักพัฒนา 3D Animation พี่พี DIT รหัส 64 จะมาแนะนำน้องๆ ที่สนใจในการไปทำงานสายงาน Animation',
             videoId: '4Yw6U4B8rR8'
@@ -29,16 +44,22 @@ const activityData = {
     ],
     activityDIT: [
         {
-            id: 4,
-            title: 'กิจกรรม',
-            description: 'อบรมค่ายกลคนวิศวะ ET CAMP 2024',
-            videoId: 'K6vMDmm5Yuc'
+            id: 5,
+            title: 'ภาพแห่งความทรงจำที่งดงามที่สุดของปี',
+            description: 'คณะวิศวกรรมศาสตร์และเทคโนโลยี ขอแสดงความยินดีกับมหาบัณฑิตและบัณฑิตในพิธีรับปริญญาบัตร รุ่นที่ 15 สถาบันการจัดการปัญญาภิวัฒน์',
+            videoId: 'eojwSx5pBOQ'
         },
         {
-            id: 5,
-            title: 'กิจกรรม',
-            description: 'บันทึกความทรงจำแรกของชาว ETPIM DEK68! กิจกรรมรับน้องใหม่และประชุมเชียร์ ประจำปี 2568',
-            videoId:'3nnoKFdt6CQ'
+            id: 6,
+            title: 'กิจกรรมรับน้องใหม่และประชุมเชียร์ ประจำปี 2568',
+            description: 'บันทึกความทรงจำแรกของชาว ETPIM DEK68! จัดขึ้นอย่างอบอุ่น สนุกสนาน และเต็มไปด้วยพลังแห่งมิตรภาพ เมื่อวันอาทิตย์ที่ 6 กรกฎาคม 2568 ณ Exhibition Hall West Zone และลานกิจกรรม West Court คณะวิศวกรรมศาสตร์และเทคโนโลยี สถาบันการจัดการปัญญาภิวัฒน์',
+            videoId: '3nnoKFdt6CQ'
+        },
+        {
+            id: 7,
+            title: 'ค่ายกลคนวิศวะ ET CAMP 2024',
+            description: 'อบรมค่ายกลคนวิศวะ ET CAMP 2024 คณะวิศวกรรมศาสตร์และเทคโนโลยี สถาบันการจัดการปัญญาภิวัฒน์ ที่นี่เรามีการเรียนการสอนที่ทันสมัยและมุ่งเน้นให้ผู้เรียนมีทักษะที่จำเป็นสำหรับอนาคต',
+            videoId: 'K6vMDmm5Yuc'
         }
     ]
 };
@@ -66,7 +87,9 @@ const ActivityCard = ({ title, description, videoId, subtitle }) => {
             {/* Text Content */}
             <div>
                 <h3 className="text-2xl font-bold text-[#193F7D] mb-2">{title}</h3>
-                <p className="text-gray-700 leading-relaxed text-lg">{description}</p>
+                <p className="text-gray-700 leading-relaxed text-lg whitespace-pre-line">
+                    {description}
+                </p>
                 {subtitle && <p className="text-sm text-gray-500 mt-2">{subtitle}</p>}
             </div>
         </motion.div>
@@ -78,7 +101,7 @@ const Activity = () => {
 
     return (
         <>
-            <Navbar /> 
+            <Navbar />
             <div className="bg-gray-100 min-h-screen">
 
                 {/* === 1. Header Banner === */}
@@ -119,9 +142,9 @@ const Activity = () => {
                         ))}
                     </div>
 
-                     <div className="mb-10">
+                    <div className="mb-10">
                         <h2 className="text-2xl md:text-3xl font-extrabold text-gray-800 border-b-4 border-[#3FA2F6] inline-block pb-1 pr-10">
-                        กิจกรรม
+                            กิจกรรม
                         </h2>
                     </div>
 

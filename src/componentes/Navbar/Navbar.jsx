@@ -13,7 +13,13 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const handleMenuClick = (item) => {
-    // ถ้ามี scrollTo
+    // external link
+    if (item.external) {
+      window.location.href = item.link;
+      return;
+    }
+
+    // scroll section
     if (item.scrollTo) {
       navigate(item.path);
 
@@ -25,7 +31,7 @@ const Navbar = () => {
       return;
     }
 
-    // ถ้าเป็นลิงก์ธรรมดา
+    // internal route
     if (item.link) {
       navigate(item.link);
     }
@@ -49,24 +55,24 @@ const Navbar = () => {
     <>
       <nav
         className={`fixed w-full top-0 left-0 z-50 transition-all duration-300 ${isScrolled
-            ? "bg-[#193F7D]/30 backdrop-blur-sm shadow-lg"
-            : "bg-transparent"
+          ? "bg-[#193F7D]/30 backdrop-blur-sm shadow-lg"
+          : "bg-transparent"
           }`}
       >
         <div className="container mx-auto flex justify-between items-center py-4 px-4 md:px-10">
 
           {/* Logo */}
           <div className="flex items-center gap-2 md:gap-4">
-            <a 
-              href="https://www.pim.ac.th/" 
-              target="_blank" 
+            <a
+              href="https://www.pim.ac.th/"
+              target="_blank"
               rel="noopener noreferrer"
               className="cursor-pointer hover:opacity-80 transition-opacity"
             >
               <img src="picture/PIM1.png" className="w-10 md:w-12" alt="PIM Logo" />
             </a>
-            <Link 
-              to="/" 
+            <Link
+              to="https://et.pim.ac.th/wp/"
               className="cursor-pointer hover:opacity-80 transition-opacity"
             >
               <img src="picture/ETLOGO.png" className="w-32 md:w-40" alt="DIT Logo" />
