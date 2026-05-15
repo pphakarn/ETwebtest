@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from '../componentes/Navbar/Navbar'
 import Footer from '../componentes/Footer/footer'
+import ScholarshipTable from '../componentes/ScholarshipTable'
 
 const Course = () => {
 
@@ -67,6 +68,19 @@ const Course = () => {
                                             }`}
                                     >
                                         แผนการเรียนรู้
+                                    </button>
+                                </li>
+
+                                <li>
+                                    <button
+                                        onClick={() => setActivePage('tuition')}
+                                        className={`w-full py-2 rounded-full font-semibold text-sm transition
+            ${activePage === 'tuition'
+                                                ? 'bg-[#193F7D] text-white'
+                                                : 'text-[#193F7D]'
+                                            }`}
+                                    >
+                                        ค่าธรรมเนียมการศึกษา
                                     </button>
                                 </li>
 
@@ -660,6 +674,17 @@ const Course = () => {
 
                                 </div>
 
+                            </div>
+                        )}
+
+                        {activePage === 'tuition' && (
+                            <div className="space-y-10">
+                                <div className="bg-[#EEF5FF] rounded-3xl p-8 shadow-md overflow-hidden">
+                                    <h2 className="text-xl font-bold text-center mb-6 text-[#193F7D]">
+                                        ค่าธรรมเนียมการศึกษาและทุนการศึกษา
+                                    </h2>
+                                    <ScholarshipTable />
+                                </div>
                             </div>
                         )}
                     </main>

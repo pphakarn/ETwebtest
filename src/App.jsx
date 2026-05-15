@@ -13,10 +13,13 @@ import ResumeAsarawin from './pages/ResumeA.sarawin.jsx';
 import AlumniPage from './pages/Alumni';
 import ResumePkanda from './pages/ResumeP.kanda.jsx';
 import ResumeAoak from './pages/ResumeA.oak.jsx';
+import FloatingSocial from './componentes/FloatingSocial';
+
 const App = () => {
   return (
     <>
       <ScrollToTop />
+      <FloatingSocial />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/home' element={<Home />} />

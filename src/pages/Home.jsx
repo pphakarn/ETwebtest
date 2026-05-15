@@ -3,10 +3,11 @@ import Navbar from '../componentes/Navbar/Navbar'
 import "../css/Home.css";
 import { motion } from 'framer-motion';
 import { IoReceiptOutline } from "react-icons/io5";
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaChevronDown } from "react-icons/fa";
 import AnimatedHeadline from '../componentes/AnimatedHeadline';
 import Footer from '../componentes/Footer/footer';
 import { Link } from 'react-router-dom';
+import { personnelData } from '../mockData/data';
 
 const fadeInFromLeftVariants = {
     hidden: { opacity: 0, x: -100 },
@@ -62,44 +63,6 @@ const Home = () => {
         }
     };
 
-    const personnelData = [
-        {
-            href: "/อาจารย์ศราวิน",
-            src: "picture/Teacher/asarawin.png",
-            alt: "อาจารย์ศราวิน"
-        },
-        {
-            href: "/อาจารย์พรศักดิ์",
-            src: "https://et.pim.ac.th/wp/wp-content/uploads/2025/02/ดีไซน์ที่ยังไม่ได้ตั้งชื่อ.zip-5-1.png",
-            alt: "อาจารย์พรศักดิ์"
-        },
-        {
-            href: "/อาจารย์วรรณวิภา",
-            src: "https://et.pim.ac.th/wp/wp-content/uploads/2025/02/ดีไซน์ที่ยังไม่ได้ตั้งชื่อ.zip-pat-5.png",
-            alt: "อาจารย์วรรณวิภา"
-        },
-        {
-            href: "/อาจารย์ชนกานต์",
-            src: "picture/Teacher/aoak.png",
-            alt: "อาจารย์ชนกานต์"
-        },
-        {
-
-            href: "/อาจารย์ดนัยเลิศ",
-            src: "https://et.pim.ac.th/wp/wp-content/uploads/2025/02/ดีไซน์ที่ยังไม่ได้ตั้งชื่อ.zip-lek-2.png",
-            alt: "อาจารย์ดนัยเลิศ"
-        },
-        {
-            href: "/อาจารย์วุฒิกานต์",
-            src: "https://et.pim.ac.th/wp/wp-content/uploads/2025/02/ดีไซน์ที่ยังไม่ได้ตั้งชื่อ.zip-6-1.png",
-            alt: "อาจารย์วุฒิกานต์"
-        },
-        {
-            href: "/พี่กานดา",
-            src: "https://et.pim.ac.th/wp/wp-content/uploads/2025/03/กิ๊ก-4-1.png",
-            alt: "อาจารย์กานดา"
-        },
-    ];
 
     return (
         <>
@@ -125,6 +88,31 @@ const Home = () => {
                         />
                     </div>
                 </div>
+
+                {/* Scroll Indicator */}
+                <motion.div 
+                    className="absolute bottom-8 md:bottom-12 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 cursor-pointer opacity-80 hover:opacity-100 transition-opacity"
+                    animate={{ y: [0, 10, 0] }}
+                    transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+                    onClick={() => {
+                        const nextSection = document.getElementById('intro');
+                        if (nextSection) {
+                            const offset = 80; // เผื่อความสูงของ Navbar
+                            const bodyRect = document.body.getBoundingClientRect().top;
+                            const elementRect = nextSection.getBoundingClientRect().top;
+                            const elementPosition = elementRect - bodyRect;
+                            const offsetPosition = elementPosition - offset;
+                            
+                            window.scrollTo({
+                                top: offsetPosition,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }}
+                >
+                    <span className="text-white text-xs md:text-sm font-light tracking-[0.2em] uppercase drop-shadow-md">Scroll</span>
+                    <FaChevronDown className="text-white text-lg md:text-xl drop-shadow-md" />
+                </motion.div>
             </header>
 
             <section id='intro' className="py-16 md:py-24 ">
@@ -586,10 +574,12 @@ const Home = () => {
                     muted
                     loop
                     playsInline
-                    className="absolute top-0 left-0 w-full h-full object-cover  z-0"
+                    className="absolute top-0 left-0 w-full h-full object-cover z-0"
                 >
                     <source src="video/BG2.mp4" type="video/mp4" />
                 </video>
+                {/* แผ่นกรองสีดำเพื่อให้วิดีโอมืดลง */}
+                <div className="absolute inset-0 bg-black/50 z-[1]"></div>
                 <div className="container relative z-10 mx-auto px-4">
                     <motion.div
                         className="text-center mb-12"
@@ -609,51 +599,63 @@ const Home = () => {
 
                     {/* ภาพบุคลากร */}
                     <motion.div
-                        className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-1 justify-items-center max-w-7xl mx-auto"
+                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 items-end max-w-7xl mx-auto px-4 gap-4 md:gap-1.5"
                         variants={gridContainerVariants}
                         initial="hidden"
                         whileInView="show"
-                        viewport={{ once: true, amount: 0.2 }}
+                        viewport={{ once: true, amount: 0.1 }}
                     >
                         {/* ใช้ map วนลูปแสดงผล โดยเช็คว่าเป็น Link ภายใน หรือ <a> ภายนอก */}
                         {personnelData.map((person, index) => {
-                            // ตรวจสอบว่าเป็นลิงก์ภายในหรือไม่ (เช็คว่าขึ้นต้นด้วย /)
                             const isInternalLink = person.href.startsWith('/');
-
-                            if (isInternalLink) {
-                                return (
-                                    <motion.div
-                                        key={index}
-                                        variants={cardVariants}
-                                        className="w-full h-full block transition-transform duration-300 hover:scale-130 overflow-hidden"
-                                    >
-                                        <Link to={person.href}>
-                                            <img
-                                                src={person.src}
-                                                alt={person.alt}
-                                                className="w-full h-full object-cover cursor-pointer"
-                                            />
-                                        </Link>
-                                    </motion.div>
-                                );
-                            } else {
-                                return (
-                                    <motion.a
-                                        key={index}
-                                        href={person.href}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="w-full h-full block transition-transform duration-300 hover:scale-130 overflow-hidden"
-                                        variants={cardVariants}
-                                    >
+                            const CardContent = (
+                                <div className="group relative flex flex-col items-center transition-all duration-500 cursor-pointer">
+                                    {/* ตัวบุคคล (ไม่มีกรอบ ลอยบนพื้นหลัง) */}
+                                    <div className="relative h-[400px] md:h-[550px] w-full transition-all duration-500 group-hover:scale-110 group-hover:-translate-y-4 z-10 group-hover:z-20 overflow-hidden">
                                         <img
                                             src={person.src}
                                             alt={person.alt}
-                                            className="w-full h-full object-cover"
+                                            className="w-full h-full object-cover object-top brightness-90 group-hover:brightness-110 group-hover:drop-shadow-[0_0_20px_rgba(63,162,246,0.6)] transition-all duration-500"
                                         />
-                                    </motion.a>
-                                );
-                            }
+                                        
+                                        {/* ชื่ออาจารย์และรายละเอียดเพิ่มเติม */}
+                                        <div className="absolute bottom-0 left-0 right-0 transition-all duration-500 pointer-events-none z-30">
+                                            <div className="bg-gradient-to-t from-[#0a192f] via-[#0a192f]/80 to-transparent p-6 pt-16 text-center">
+                                                {/* ชื่อ (แสดงตลอดเวลา) */}
+                                                <p className="text-white font-bold text-xs sm:text-sm md:text-base drop-shadow-2xl leading-tight transform group-hover:-translate-y-1 transition-transform duration-500">
+                                                    {person.alt}
+                                                </p>
+                                                
+                                                {/* ข้อความ ดูรายละเอียดเพิ่มเติม (แสดงเฉพาะตอน Hover) */}
+                                                <div className="mt-2 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500 flex flex-col items-center">
+                                                    <span className="text-[#3FA2F6] text-[10px] md:text-xs font-semibold tracking-wide flex items-center gap-1">
+                                                        ดูรายละเอียดเพิ่มเติม <span className="text-lg">›</span>
+                                                    </span>
+                                                    <div className="w-12 h-0.5 bg-[#3FA2F6] mt-1 rounded-full shadow-[0_0_10px_rgba(63,162,246,0.8)]"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            );
+
+                            return (
+                                <motion.div
+                                    key={index}
+                                    variants={cardVariants}
+                                    className="flex-1 min-w-0"
+                                >
+                                    {isInternalLink ? (
+                                        <Link to={person.href}>
+                                            {CardContent}
+                                        </Link>
+                                    ) : (
+                                        <a href={person.href} target="_blank" rel="noopener noreferrer">
+                                            {CardContent}
+                                        </a>
+                                    )}
+                                </motion.div>
+                            );
                         })}
                     </motion.div>
                 </div>

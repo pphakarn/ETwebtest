@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 import Navbar from '../componentes/Navbar/Navbar';
 import Footer from '../componentes/Footer/footer';
+import StaffSwitcher from '../componentes/StaffSwitcher';
 
 const ResumeAoak = () => {
     const fadeInUp = {
@@ -154,6 +155,7 @@ const ResumeAoak = () => {
                 </motion.div>
             </div>
 
+            <StaffSwitcher />
             <section>
                 <Footer />
             </section>

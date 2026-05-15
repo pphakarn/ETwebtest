@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { NavbarMenu } from "../../mockData/data";
 import { IoChatbubblesOutline } from "react-icons/io5";
 import { MdMenu } from "react-icons/md";
@@ -52,22 +53,34 @@ const Navbar = () => {
             : "bg-transparent"
           }`}
       >
-        <div className="container mx-auto flex justify-between items-center py-4">
+        <div className="container mx-auto flex justify-between items-center py-4 px-4 md:px-10">
 
           {/* Logo */}
           <div className="flex items-center gap-2 md:gap-4">
-            <img src="picture/PIM1.png" className="w-10 md:w-12" alt="PIM Logo" />
-            <img src="picture/ETLOGO.png" className="w-32 md:w-40" alt="DIT Logo" />
+            <a 
+              href="https://www.pim.ac.th/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="cursor-pointer hover:opacity-80 transition-opacity"
+            >
+              <img src="picture/PIM1.png" className="w-10 md:w-12" alt="PIM Logo" />
+            </a>
+            <Link 
+              to="/" 
+              className="cursor-pointer hover:opacity-80 transition-opacity"
+            >
+              <img src="picture/ETLOGO.png" className="w-32 md:w-40" alt="DIT Logo" />
+            </Link>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden lg:block ml-auto">
-            <ul className="flex items-center gap-6 text-white">
+            <ul className="flex items-center gap-2 text-white">
               {NavbarMenu.map((item) => (
                 <li key={item.id}>
                   <button
                     onClick={() => handleMenuClick(item)}
-                    className="inline-block py-1 px-3 hover:text-blue-400 font-semibold transition"
+                    className="inline-block py-2 px-4 hover:bg-blue-400 hover:text-white rounded-full font-semibold transition-all duration-300"
                   >
                     {item.title}
                   </button>
