@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaYoutube } from 'react-icons/fa';
 import Navbar from '../componentes/Navbar/Navbar'; // Navbar ควรอยู่ข้างนอก
-import { title, video } from 'framer-motion/client';
 
 // ข้อมูลกิจกรรมและวิดีโอ (ใช้ ID วิดีโอจริงของคุณ)
 const activityData = {

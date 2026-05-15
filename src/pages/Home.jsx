@@ -1,8 +1,7 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useRef } from 'react'
 import Navbar from '../componentes/Navbar/Navbar'
 import "../css/Home.css";
 import { motion } from 'framer-motion';
-import { IoReceiptOutline } from "react-icons/io5";
 import { FaSearch, FaChevronDown } from "react-icons/fa";
 import AnimatedHeadline from '../componentes/AnimatedHeadline';
 import Footer from '../componentes/Footer/footer';
