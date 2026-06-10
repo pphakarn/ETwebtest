@@ -15,7 +15,7 @@ const AlumniSlider = () => {
       <div className="container mx-auto px-6">
 
         <Swiper
-          modules={[Autoplay, Pagination, Navigation]}
+          modules={[Autoplay, Pagination]}
           speed={900}
           autoplay={{
             delay: 4500,
@@ -23,7 +23,6 @@ const AlumniSlider = () => {
           }}
           loop
           pagination={{ clickable: true }}
-          navigation
           slidesPerView={1}
           spaceBetween={60}
           className="pb-14"

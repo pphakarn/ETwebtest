@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaFacebookMessenger, FaInstagram, FaTiktok, FaChevronDown, FaFacebook } from "react-icons/fa";
+import { FaFacebookMessenger, FaInstagram, FaTiktok, FaChevronDown, FaFacebook, FaPhone } from "react-icons/fa";
 
 const FloatingSocial = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -34,12 +34,18 @@ const FloatingSocial = () => {
             color: 'bg-black',
             label: 'TikTok',
             href: 'https://www.tiktok.com/@et.pim?is_from_webapp=1&sender_device=pc'
+        },
+        {
+            icon: <FaPhone />,
+            color: 'bg-green-500',
+            label: 'Call',
+            href: 'tel:02-855-0000'
         }
     ];
 
     return (
         <div className="fixed right-6 top-1/2 -translate-y-1/2 z-999 flex flex-col items-center gap-4">
-            
+
             {/* 1. ปุ่มหลัก (Toggle) - อยู่บนสุดเสมอ */}
             <motion.button
                 onClick={() => setIsOpen(!isOpen)}
@@ -70,7 +76,7 @@ const FloatingSocial = () => {
             {/* 3. ไอคอนที่เด้งออกมา (เรียงต่อลงมาข้างล่างตรงๆ) */}
             <AnimatePresence>
                 {isOpen && (
-                    <motion.div 
+                    <motion.div
                         className="flex flex-col gap-4"
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
